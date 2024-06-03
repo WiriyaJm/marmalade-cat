@@ -3,19 +3,16 @@
 */
 .ddl-card {
   &__type1 {
-    background-color: var(--satin-50);
-    border-color: var(--satin-50);
+    background-color: var(--primary-60);
+    border-color: var(--primary-60);
     padding: 1rem;
-    border-radius: 0;
-
-    .card-img-top{
-border-radius: 0;
-    }
-
-    .card-body{
-      padding-left: 0;
-      padding-right: 0;
-    }
+    border-radius: 0.8rem;
+  }
+  &__type2{
+    background-color: var(--gray-90);
+    border-color: var(--gray-60);
+    padding: 1rem;
+    border-radius: 0.8rem;
   }
 }
 

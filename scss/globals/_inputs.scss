@@ -2,16 +2,15 @@
   Inputs starting point 
 */
 .ddl-input {
-  border-color: var(--orange-700);
+  border-color: var(--gray-50);
   border-width: 2px;
-  border-radius: 0;
 
   &:focus {
-    border-color: var(--orange-400);
+    border-color: var(--red-50);
   }
 
   &::placeholder {
-    color: var(--gray-300);
+    color: var(--gray-50);
   }
 }
 
@@ -33,7 +32,7 @@
       line-height: 2.375rem;
       text-align: center;
       pointer-events: none;
-      color: var(--gray-300);
+      color: var(--gray-50);
     }
     &_right {
       position: absolute;
@@ -44,38 +43,36 @@
       line-height: 2.375rem;
       text-align: center;
       pointer-events: none;
-      color: var(--gray-300);
+      color: var(--gray-50);
       right: 0;
     }
   }
 
   .form-input-icon_left {
     padding-left: 2.375rem;
-    border-color: var(--orange-700);
+    border-color: var(--gray-50);
     border-width: 2px;
-    border-radius: 0;
 
     &:focus {
-      border-color: var(--orange-400);
+      border-color: var(--red-50);
     }
 
     &::placeholder {
-      color: var(--gray-300);
+      color: var(--gray-50);
     }
   }
 
   .form-input-icon_right {
     padding-right: 2.375rem;
-    border-color: var(--orange-700);
+    border-color: var(--gray-50);
     border-width: 2px;
-    border-radius: 0;
 
     &:focus {
-      border-color: var(--orange-400);
+      border-color: var(--red-50);
     }
 
     &::placeholder {
-      color: var(--gray-300);
+      color: var(--gray-50);
     }
   }
 }

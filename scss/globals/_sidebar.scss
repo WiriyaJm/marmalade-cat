@@ -5,7 +5,7 @@
 .ddl-sb {
   &--item {
     #{--bs-nav-pills-border-radius}: 1.5rem;
-    #{--bs-nav-pills-link-active-bg}: var(--orange-500);
+    #{--bs-nav-pills-link-active-bg}: var(--secondary-50);
   }
 }
 
@@ -49,24 +49,24 @@
 }
 
 .sbm {
-  color: var(--orange-50);
+  color: var(--bc-primary-50);
   padding-left: 8px;
   opacity: 0.5;
   transition: 0.5s;
 
   &:hover {
-    color: var(--orange-50);
+    color: var(--bc-primary-50);
     opacity: 1;
   }
 }
 
 .sbm-active {
-  color: var(--gray-50);
-  border-left: 4px solid var(--gray-50) !important;
+  color: var(--bc-white-0);
+  border-left: 4px solid var(--bc-white-0) !important;
   border-radius: 0;
   opacity: 1;
 
   &:hover {
-    color: var(--gray-50);
+    color: var(--bc-white-0);
   }
 }

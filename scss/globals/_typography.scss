@@ -1,50 +1,54 @@
 @use "../utilities/" as util;
 
 // Set font
-$ddl-primary-font: util.$font-base--primary;
-$ddl-secondary-font: util.$font-base--secondary;
+$bc-primary-font: util.$font-base--primary;
+$bc-secondary-font: util.$font-base--secondary;
 /* 
   Typo starting point 
 */
-$ddl-type-base-size: 16px;
-$ddl-scale-ratio: 1.2;
+$bc-type-base-size: 16px;
+$bc-scale-ratio: 1.2;
 
 $typescales: (
-  "display"
-    (
-      l: util.rem(57),
-      m: util.rem(45),
-      s: util.rem(36),
-    ),
   "headline"
     (
-      l: util.rem(32),
-      m: util.rem(28),
-      s: util.rem(24),
+      1: 4.768rem,
+      2: 3.815rem,
+      3: 3.052rem,
+      4: 2.441rem,
+      5: 1.953rem,
+      6: 1.563rem,
     ),
-  "title"
+  "subtitle"
     (
-      l: util.rem(22),
-      m: util.rem(16),
-      s: util.rem(14),
-    ),
-  "label"
-    (
-      l: util.rem(14),
-      m: util.rem(12),
-      s: util.rem(11),
+      1: 1.25rem,
+      2: 1.125rem,
     ),
   "body"
     (
-      l: util.rem(16),
-      m: util.rem(14),
-      s: util.rem(12),
+      1: 1rem,
+      2: 0.875rem,
+    ),
+  "button"
+    (
+      1: 0.875rem,
+      2: 1rem,
+      3: 1.125rem,
+    ),
+  "caption"
+    (
+      1: 0.8rem,
+    ),
+  "link"
+    (
+      1: 0.875rem,
     )
 );
 
 $font-weights: (
   "light": 300,
-  "regular": 400,
+  "normal": 400,
+  "semibold": 600,
   "bold": 700,
 );
 
@@ -52,15 +56,8 @@ $font-weights: (
   @each $scale, $values in $scales {
     .ddl_typesscale-#{$type}-#{$scale} {
       font-size: $values;
-      @if $type == "display" or $type == "headline" or $type == "title" {
-        font-family: $ddl-primary-font;
-        line-height: 1.2;
-        font-style: normal;
-      } @else {
-        font-family: $ddl-primary-font;
-        line-height: 1.5;
-        font-style: normal;
-      }
+      font-family: $bc-primary-font;
+      line-height: 1.2;
     }
   }
 }
